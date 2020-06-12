@@ -10,5 +10,6 @@ module Bot::DiscordCommands
 			puts "Shutting Down (Source: Discord Command from #{event.user.username} / #{event.user.id})"
 			Bot::BOT.stop
 		end
+
 	end
 end

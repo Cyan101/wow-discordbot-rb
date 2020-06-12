@@ -1,6 +1,6 @@
 module Bot::DiscordCommands
-        module Admincommands
-                extend Discordrb::EventContainer
+  module Admincommands
+    extend Discordrb::EventContainer
 
 		message(contains: /(asmon)/i) do |event|
 			event.respond 'MALD'

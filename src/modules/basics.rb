@@ -3,7 +3,7 @@ module Bot::DiscordCommands
     extend Discordrb::Commands::CommandContainer
 
     command(:ping, help_available: false) do |event|
-	event.respond "pong"
+	     event.respond "pong"
     end
 
   end

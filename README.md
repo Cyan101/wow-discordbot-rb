@@ -17,7 +17,7 @@ bundle
 
 [Grab your Discordbot token ](https://discordapp.com/developers/applications/me)
 
-Into a config.yaml file (see example below)
+create a settings folder and make a config.yaml file inside (see example below)
 
 ```
 ---

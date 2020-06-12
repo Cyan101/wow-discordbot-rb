@@ -2,7 +2,7 @@ require 'discordrb'
 require 'yaml'
 
 module Bot
-	
+
 	CONFIG = OpenStruct.new YAML.load_file 'settings/config.yaml'
 
 	BOT = Discordrb::Commands::CommandBot.new(client_id: CONFIG.client_id, token: CONFIG.token, prefix: CONFIG.prefix)
@@ -14,8 +14,9 @@ module Bot
 	end
 
 	BOT.ready do
+    START_TIME = Time.now
 		puts "WoW-Stats is fully loaded\n Invite link '#{BOT.invite_url}'"
 	end
-	
+
 	BOT.run
 end
